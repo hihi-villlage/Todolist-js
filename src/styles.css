@@ -1,3 +1,67 @@
 body {
   font-family: sans-serif;
 }
+
+.title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.subtitle{
+  font-weight: bold;
+  color: grey;
+  margin: 2px 0px 0px;
+  padding-left: 5px;
+}
+
+.input-area{
+  background-color: rgb(247, 202, 209);
+  width: auto;
+  height: 30px;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.todo-area{
+  background-color: rgb(209, 240, 163);
+  width: auto;
+  min-height: 80px;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+.inprogress-area{
+  background-color: rgb(169, 230, 229);
+  width: auto;
+  min-height: 80px;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+.done-area{
+  background-color: rgb(196, 182, 230);
+  width: auto;
+  min-height: 80px;
+  padding: 4px;
+  margin-top: 4px;
+  border-radius: 6px;
+}
+
+.list-row{
+  display: flex;
+  align-items: center;
+  margin: 4px;
+}
+
+button{
+  border-radius: 10px;
+  margin: 3px;
+}
+
+button:hover{
+  background-color: aliceblue;
+  color: deeppink;
+  cursor: pointer;
+}

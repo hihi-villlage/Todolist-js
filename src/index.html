@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Parcel Sandbox</title>
+    <title>TODO List(JS)</title>
     <meta charset="UTF-8" />
   </head>
 
   <body>
-    <div id="app"></div>
+    <div class = "title">
+      <p>My To Do List</p>
+    </div>
+
+    <div class = "input-area">
+      <input id = "add-text" placeholder="Task name">
+      <button id ="add-button">add</button>
+    </div>
+
+    <div class = "todo-area">
+      <p class="subtitle">To do</p>
+      <ul id = "todo-tasks">
+        <div class = "list-row">
+          <li>Task to do</li>
+          <button>In progress</button>
+          <button>Delete</button>
+        </div>     
+        <div class = "list-row">
+          <li>Task to do</li>
+          <button>In progress</button>
+          <button>Delete</button>
+        </div>        
+      </ul>
+    </div>
+
+    <div class = "inprogress-area">
+      <p class="subtitle">In progress</p>
+      <ul id = "inprogress-tasks">
+        <div class = "list-row">
+          <li>Task in progress</li>
+          <button>Done</button>
+        </div>
+      </ul>
+    </div>
+    <div class = "done-area">
+      <p class="subtitle">Done</p>
+      <ul class = "done-tasks">
+        <div class = "list-row" >
+          <li>Task done</li>
+          <button>Not yet</button>
+        </div>
+      </ul>
+    </div>
 
     <script src="./index.mjs" type="module"></script>
   </body>
