@@ -34,7 +34,31 @@ inprogressButton.addEventListener ("click", () => {
     const doneButton = document.createElement("button");
     doneButton.innerText = "Done";
     doneButton.addEventListener ("click", () =>{
-        alert ("ee");
+        deleteTaskFromInprogressList (doneButton.parentNode);
+            //taskの内容（テキスト.liの中身だけ）をdoneに追加
+        const addTarget1 = doneButton.parentNode;
+        const addDone = addTarget1.firstElementChild.innerText;
+    
+        //div以下を初期化する
+        addTarget1.textContent = null;
+
+        //liタグ生成
+        const li = document.createElement("li");
+        li.innerText = addDone; //タグの中に文字を入れる
+
+        //ボタン作成
+        const notyetButton = document.createElement("button");
+        notyetButton.innerText = "Not yet";
+        notyetButton.addEventListener ("click", () =>{
+            alert (ooo);
+        })
+
+
+        div.appendChild (li);
+        div.appendChild (notyetButton);
+
+        document.getElementById("done-tasks").appendChild(div); //inprogressリストにinput内容を追加 
+
     })
 
 
@@ -70,3 +94,6 @@ const deleteTaskFromtodoList = (target) => {
 };
 
 //inprogress
+const deleteTaskFromInprogressList = (target) => {
+    document.getElementById ("inprogress-tasks").removeChild(target);
+};
